@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fertility Report Analysis</title>
+
+<style>
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#f4f8fc;
+    margin:0;
+}
+
+/* Header */
+
+.header{
+    background:#0b5ed7;
+    color:white;
+    padding:18px;
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+}
+
+/* Container */
+
+.container{
+    width:480px;
+    margin:60px auto;
+    background:white;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    border-top:5px solid #0b5ed7;
+    text-align:center;
+}
+
+/* Upload Box */
+
+.upload-box{
+    border:2px dashed #ccd6e0;
+    padding:25px;
+    border-radius:10px;
+    background:#f9fbfd;
+    margin-bottom:20px;
+}
+
+.upload-box label{
+    font-weight:600;
+    color:#2c3e50;
+}
+
+input[type="file"]{
+    margin-top:12px;
+}
+
+/* Button */
+
+button{
+    width:100%;
+    padding:12px;
+    background:#0b5ed7;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#084298;
+}
+
+/* Text */
+
+h2{
+    margin-bottom:20px;
+    color:#2c3e50;
+}
+
+.note{
+    font-size:12px;
+    color:#6c757d;
+    margin-top:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+Female Fertility Report Analysis
+</div>
+
+<div class="container">
+
+<h2>Upload Fertility Report</h2>
+
+<form action="/predict_fertility" method="post" enctype="multipart/form-data">
+
+<div class="upload-box">
+    <label>Select Medical Report (JPG / PNG)</label><br>
+    <input type="file" name="image" accept="image/*" required>
+</div>
+
+<button type="submit">Analyze Report</button>
+
+</form>
+
+<div class="note">
+AI-based report interpretation. Results are indicative and not a medical diagnosis.
+</div>
+
+</div>
+
+</body>
+</html>
+

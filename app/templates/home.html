@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fertility Check</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e8f5f9, #f6fbff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        h1 {
+            color: #2c7da0;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .female {
+            background-color: #ff6b81;
+            color: white;
+        }
+
+        .female:hover {
+            background-color: #ff4757;
+        }
+
+        .male {
+            background-color: #1e90ff;
+            color: white;
+        }
+
+        .male:hover {
+            background-color: #187bcd;
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #adb5bd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon">🩺</div>
+        <h1>Fertility Check</h1>
+        <p>Select your category to begin assessment</p>
+
+        <button class="btn female" onclick="location.href='/female'">
+            Female Analysis
+        </button>
+
+        <button class="btn male" onclick="location.href='/male'">
+            Male Analysis
+        </button>
+
+        <div class="footer">
+            AI-powered health insights • Secure & Private
+        </div>
+    </div>
+</body>
+</html>
+
+
